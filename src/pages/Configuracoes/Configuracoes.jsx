@@ -45,6 +45,7 @@ export default function ConfiguracoesPage() {
   const navigate = useNavigate();
 
   const sair = () => {
+    localStorage.removeItem('authToken');
     navigate("/");
   };
 
