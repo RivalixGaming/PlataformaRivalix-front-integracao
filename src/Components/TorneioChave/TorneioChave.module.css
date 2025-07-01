@@ -1,0 +1,120 @@
+.bracket {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 600px;
+}
+
+.round {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.round h3 {
+  color: #b39ddb;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.match {
+  background-color: #2a2a38;
+  border: 1px solid #4d2f7a;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px 10px;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.match.playable {
+  cursor: pointer;
+  border-color: #9e78dc;
+}
+
+.match.playable:hover {
+  background-color: #3e3e52;
+}
+
+.player {
+  font-weight: 600;
+}
+
+.vs {
+  font-size: 0.8em;
+  color: #9e78dc;
+  margin: 4px 0;
+}
+
+.winner {
+  margin-top: 10px;
+  color: #81c784;
+  font-weight: bold;
+}
+
+.resetButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #c62828;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+
+  .bracketWrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 4px;
+  }
+
+  .bracket {
+    flex-wrap: nowrap;
+    gap: 1rem;              
+    min-width: 560px;        
+  }
+
+  .round {
+    min-width: 140px;
+    gap: 0.75rem;
+  }
+
+  .match {
+    padding: 12px 10px;
+    margin: 14px 0;
+    font-size: 0.75rem;
+  }
+
+  .round h3 {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .round {
+    min-width: 120px;
+  }
+
+  .match {
+    padding: 10px 8px;
+    font-size: 0.7rem;
+  }
+
+  .round h3 {
+    font-size: 0.7rem;
+  }
+}
+
+.bracketWrapper::-webkit-scrollbar {
+  display: none;          
+}
+.bracketWrapper {
+  scrollbar-width: none;
+}

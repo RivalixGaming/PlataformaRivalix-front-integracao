@@ -1,0 +1,261 @@
+.login-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: url("../../assets/fliperama3d.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-form-only {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ff6a00;
+  max-height: 85vh;
+}
+
+.form-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-right: 4px;
+  flex-grow: 1;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.auth-form label {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.auth-form input {
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff; 
+  backdrop-filter: blur(6px);
+  border: 1px solid #ff6a00;
+}
+
+.auth-form input::placeholder {
+  color: #ddd; 
+}
+
+.auth-form input:focus {
+  outline: none;
+  box-shadow: 0 0 12px #ff6a00;
+}
+
+.terms-checkbox {
+  display: flex;
+  align-items: flex-start;    
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #e8e5de;
+  line-height: 1.4;
+  flex-wrap: wrap;                
+  cursor: pointer;
+}
+
+.terms-checkbox input[type="checkbox"] {
+  accent-color: #ff6a00;      
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;              
+  flex-shrink: 0;                 
+}
+
+.terms-checkbox a {
+  color: #a020f0;
+  text-decoration: underline;
+}
+
+.auth-button {
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: #ff6a00;
+  border: 2px solid #ff6a00;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.auth-button:hover {
+  box-shadow: 0 0 15px #ff6a00;
+  text-shadow: 0 0 8px #ff6a00;
+  transform: translateY(-3px);
+}
+
+.auth-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border: 2px solid #888;
+  color: #aaa;
+  background-color: rgba(255, 255, 255, 0.05);
+  text-shadow: none;
+  box-shadow: none;
+  transform: none;
+  transition: none;
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.toggle-auth {
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+}
+
+.toggle-auth span {
+  color: #a020f0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.input-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon-wrapper input {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid #ff6a00;
+  backdrop-filter: blur(6px);
+}
+
+.input-icon {
+  position: absolute;
+  right: 10px;
+  color: #e8e5de;
+  pointer-events: none;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #e8e5de;
+  font-size: 1.2rem;
+}
+
+.auth-form::-webkit-scrollbar {
+  width: 3px;
+}
+
+.auth-form::-webkit-scrollbar-thumb {
+  background: #a020f0;
+  border-radius: 8px;
+}
+
+.scrollable-form {
+  overflow-y: auto;
+  max-height: 50vh;
+}
+
+.no-scroll-form {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .login-form-only {
+    padding: 2rem 1.5rem;
+  }
+
+  .form-title {
+    font-size: 2rem;
+  }
+
+  .auth-button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .login-wrapper {
+    height: 100svh;     
+    width: 100%;
+    box-sizing: border-box;  
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    padding: 0 1rem;         
+    overflow-y: auto;        
+  }
+
+  .login-form-only {
+    width: 100%;
+    max-width: 320px;        
+    margin: 0 auto;  
+    max-height: 90vh;      
+    padding: 1.25rem 1rem 3.5rem;  
+    overflow-y: auto;          
+    border-radius: 16px;
+    box-shadow: 0 0 18px rgba(0,0,0,.18);
+  }
+
+  .form-title   { 
+    font-size: 1.6rem; margin-bottom: 1.25rem; 
+  }
+
+  .auth-form { 
+    gap: 0.75rem; margin-bottom: 1.5rem; 
+  }
+
+  .auth-form input,
+  .input-icon-wrapper input {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+
+  .form-footer { margin-top: auto; }
+  .toggle-auth { font-size: 0.8rem; }
+
+  .auth-button {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .toggle-password { right: 8px; font-size: 1rem; }
+  
+}
