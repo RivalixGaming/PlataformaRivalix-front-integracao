@@ -80,7 +80,7 @@ export default function LoginPage() {
   e.preventDefault();
   if (cadastroValido) {
     try {
-      const response = await fetch("https://plataforma-rivalix-gaming-24af3d5ab112.herokuapp.com/api/auth/register", { // Ou "/api/auth/register" se moveu
+      const response = await fetch("https://plataforma-rivalix-gaming-24af3d5ab112.herokuapp.com/api/auth/register", { 
         method: "POST",
         headers: {
           "Content-Type": "application/json",
