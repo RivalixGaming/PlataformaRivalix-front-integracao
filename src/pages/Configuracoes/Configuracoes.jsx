@@ -1,6 +1,5 @@
 import { useContext, useState } from 'react';
 import NavbarHome from "../../Components/HomeNavBar/NavBarHome.jsx";
-import { useNavigate } from 'react-router-dom'; // Import para o hook de navegação
 import { ThemeContext } from '../../contexts/ThemeContext';
 import logoClaro from '../../assets/logoClaro.png';
 import logoDark from '../../assets/LogoDark.png';
@@ -12,17 +11,7 @@ export default function ConfiguracoesPage() {
     const { theme, setTheme } = useContext(ThemeContext);
     const isDark = theme === 'dark';
     const logo = isDark ? logoDark : logoClaro;
-    const [mostrarSelecionador, setMostrarSelecionador] = useState(false);
-
-    const navigate = useNavigate();
-
-
-     const handleLogout = () => {
-        console.log("Saindo da conta...");
-        localStorage.removeItem('authToken');
-        
-        navigate('/login', { replace: true });
-    };
+     const [mostrarSelecionador, setMostrarSelecionador] = useState(false);
 
     // Troca de tema
     const handleToggle = (e) => {
@@ -45,6 +34,8 @@ export default function ConfiguracoesPage() {
     const handleChangeBirth = () => {
         console.log("Selecionar nova data de nascimento");
     };
+
+    // Adicionar as outras funcionalidades futuramente no mesmo padrão...
 
     const [showAchievements, setShowAchievements] = useState(true);
     const [showXP, setShowXP] = useState(false);
@@ -151,7 +142,7 @@ export default function ConfiguracoesPage() {
               <li><button>Excluir Conta Permanentemente</button></li>
               <li><button>Exportar Dados</button></li>
               <li><button>Recarga de Saldo</button></li>
-              <li><button onClick={handleLogout}>Sair da Conta</button></li>
+              <li><button>Sair da Conta</button></li>
               <li><button>Trocar de Conta</button></li>
             </ul>
           </section>
