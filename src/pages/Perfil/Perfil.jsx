@@ -14,7 +14,7 @@ import { useProfile } from "../../contexts/ProfileContext";
 
 // Mock do usuário para testes
 const mockUser = {
-  nome: "JuiceFruit",
+  nome: "Nome",
   nivel: 15,
   foto: "",
   banner: "",
