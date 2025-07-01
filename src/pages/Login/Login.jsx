@@ -40,7 +40,7 @@ export default function LoginPage() {
     e.preventDefault();
     if (loginValido) {
     try {
-      const response = await fetch("http://localhost:8082/api/auth/login", { 
+      const response = await fetch("https://plataforma-rivalix-gaming-24af3d5ab112.herokuapp.com/api/auth/login", { 
         method: "POST",
         headers: {
           "Content-Type": "application/json",
