@@ -4,6 +4,7 @@ import Inicio from "../pages/Inicio";
 import Sobre from "../pages/Sobre/Sobre";
 import Login from "../pages/Login/Login";
 import LGPD from "../pages/LGPD/LGPD.jsx";
+import Termos from "../pages/LGPD/Termos.jsx";
 import Configuracoes from "../pages/Configuracoes/Configuracoes";
 import Perfil from "../pages/Perfil/Perfil";
 import Home from "../pages/HomePage/HomePage";
@@ -33,6 +34,8 @@ export const router = createBrowserRouter([
       { path: "/sobre", element: <Sobre /> },
       { path: "/login", element: <Login /> },
       { path: "/lgpd", element: <LGPD /> },
+      { path: "/termos", element: <Termos /> },
+
 
 
       // --- Rotas Protegidas (precisam de login) ---
