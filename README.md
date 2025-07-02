@@ -11,7 +11,7 @@
 
 ## 🌐 Acesse a plataforma
 
-👉 [https://plataforma-rivalix.vercel.app](https://plataforma-rivalix.vercel.app)
+👉 [https://plataforma-rivalix.vercel.app](https://rivalix-gaming.vercel.app)
 
 ---
 
