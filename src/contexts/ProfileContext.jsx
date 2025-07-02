@@ -15,7 +15,7 @@ export function ProfileProvider({ children }) {
             return;
         }
         try {
-            const response = await fetch('http://localhost:8082/usuarios/perfil', {
+            const response = await fetch('https://plataforma-rivalix-gaming-24af3d5ab112.herokuapp.com/usuarios/perfil', {
                 headers: { 'Authorization': `Bearer ${token}` },
             });
             if (response.ok) {
