@@ -8,7 +8,7 @@ import { useTheme } from "../../contexts/ThemeContext";
 import { useNavigate } from 'react-router-dom';
 
 
-import layoutStyles from "./PerfilPageLayout.module.css"; // Importa o novo CSS
+import layoutStyles from "./PerfilPageLayout.module.css"; 
 
 import { useProfile } from "../../contexts/ProfileContext";
 
@@ -29,7 +29,7 @@ const mockUser = {
 
 export default function PerfilPage({ user = mockUser, isOwner = true }) {
 
-  const { usuario, loading, authToken } = useProfile(); // Pega também authToken para depuração, se quiser
+  const { usuario, loading, authToken } = useProfile();
   const navigate = useNavigate();
 
   if (loading) {
@@ -42,8 +42,6 @@ export default function PerfilPage({ user = mockUser, isOwner = true }) {
   }
 
   if (!usuario) {
-    // Redirecionamento para /login deve ser tratado no ProfileProvider ou em uma rota protegida (ProtectedRoutes).
-    // Aqui, apenas não renderizamos nada se o usuario for nulo.
     return null;
   }
 
@@ -60,8 +58,7 @@ export default function PerfilPage({ user = mockUser, isOwner = true }) {
               fotoUrl={usuario.foto || ''}
               nome={usuario.nome}
             >
-              {/* Este PerfilCard parece redundante dentro do BannerPerfil, mas mantive sua estrutura */}
-              <PerfilCard nome={usuario.nome} isOwner={isOwner} />
+              <PerfilCard nome={usuario.nomeUsuario} isOwner={isOwner} />
             </BannerPerfil>
 
             <section className={layoutStyles.perfilGrid}>
