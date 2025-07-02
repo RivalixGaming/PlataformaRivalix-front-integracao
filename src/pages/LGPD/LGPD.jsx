@@ -8,7 +8,7 @@ export default function LGPD() {
 
     return (
         <>
-        <Navbar />
+            <Navbar />
             <main className={styles.corpo} role="main" aria-label="Política de Privacidade e Segurança">
                 <button onClick={() => navigate(-1)} className={styles.btnVoltar} arial-label="Voltar">
                     <i class="ri-arrow-left-line"></i>
@@ -27,42 +27,42 @@ export default function LGPD() {
 
                     <section className={styles.secao}>
                         <h2 className={styles.subtitulo}>1. Dados que coletamos</h2>
-                            <ul className={styles.lista}>
-                                <li>
-                                    <strong>Dados de Cadastro:</strong> Nome, e-mail, senha, nome de usuário, foto, bio e redes sociais.
-                                </li>
-                                <li
-                                    <strong>Dados de Utilização:</strong> Participações em torneios, ranking, interações no feed, uploads na galeria, recompensas e histórico de compras.
-                                </li>
-                                <li>
-                                    <strong>Dados de Pagamento:</strong> Informações de pagamento e transações realizadas na loja e planos pagos.
-                                </li>
-                                <li>
-                                    <strong>Dados Técnicos:</strong> Endereço IP, tipo de dispositivo, navegador e cookies.
-                                </li>
-                            </ul>
+                        <ul className={styles.lista}>
+                            <li>
+                                <strong>Dados de Cadastro:</strong> Nome, e-mail, senha, nome de usuário, foto, bio e redes sociais.
+                            </li>
+                            <li>
+                                <strong>Dados de Utilização:</strong> Participações em torneios, ranking, interações no feed, uploads na galeria, recompensas e histórico de compras.
+                            </li>
+                            <li>
+                                <strong>Dados de Pagamento:</strong> Informações de pagamento e transações realizadas na loja e planos pagos.
+                            </li>
+                            <li>
+                                <strong>Dados Técnicos:</strong> Endereço IP, tipo de dispositivo, navegador e cookies.
+                            </li>
+                        </ul>
                     </section>
 
                     <section className={styles.secao}>
                         <h2 className={styles.subtitulo}>2. Finalidades do uso dos dados</h2>
-                            <ul className={styles.lista}>
-                                <li>
-                                    Gerenciar contas e perfis personalizados.
-                                </li>
-                                <li>
-                                   Exibir rankings, torneios e interações sociais.
-                                </li>
-                                <li>
-                                    Processar compras e planos pagos.
-                                </li>
-                                <li>
-                                    Enviar notificações relevantes.
-                                </li>
-                                <li>
-                                    Garantir segurança, estabilidade e melhorias da plataforma.
-                                </li>
-                            </ul>
-                    </section> 
+                        <ul className={styles.lista}>
+                            <li>
+                                Gerenciar contas e perfis personalizados.
+                            </li>
+                            <li>
+                                Exibir rankings, torneios e interações sociais.
+                            </li>
+                            <li>
+                                Processar compras e planos pagos.
+                            </li>
+                            <li>
+                                Enviar notificações relevantes.
+                            </li>
+                            <li>
+                                Garantir segurança, estabilidade e melhorias da plataforma.
+                            </li>
+                        </ul>
+                    </section>
 
                     <section className={styles.secao}>
                         <h2 className={styles.subtitulo}>3. Compartilhamento de dados</h2>
@@ -74,7 +74,7 @@ export default function LGPD() {
                     <section className={styles.secao}>
                         <h2 className={styles.subtitulo}>4. Cookies e tecnologias semelhantes</h2>
                         <p className={styles.paragrafo}>
-                           Utilizamos cookies para melhorar sua experiência, personalizar conteúdo e coletar dados analíticos. Você pode desativá-los nas configurações do seu navegador.
+                            Utilizamos cookies para melhorar sua experiência, personalizar conteúdo e coletar dados analíticos. Você pode desativá-los nas configurações do seu navegador.
                         </p>
                     </section>
 
@@ -94,33 +94,33 @@ export default function LGPD() {
                     <section className={styles.secao}>
                         <h2 className={styles.subtitulo}>6. Segurança dos dados</h2>
                         <p className={styles.paragrafo}>
-                           Seus dados são armazenados em servidores seguros, com controles técnicos e administrativos para prevenir acessos não autorizados, perda ou destruição.
+                            Seus dados são armazenados em servidores seguros, com controles técnicos e administrativos para prevenir acessos não autorizados, perda ou destruição.
                         </p>
                     </section>
 
                     <section className={styles.secao}>
                         <h2 className={styles.subtitulo}>7. Retenção</h2>
                         <p className={styles.paragrafo}>
-                           Retemos seus dados enquanto sua conta estiver ativa ou conforme exigido por lei.
+                            Retemos seus dados enquanto sua conta estiver ativa ou conforme exigido por lei.
                         </p>
                     </section>
 
                     <section className={styles.secao}>
                         <h2 className={styles.subtitulo}>8. Alterações nesta Política</h2>
                         <p className={styles.paragrafo}>
-                           Esta política poderá ser atualizada a qualquer momento. Avisaremos por e-mail ou notificação na plataforma. O uso contínuo após alterações indica concordância com a nova versão.
+                            Esta política poderá ser atualizada a qualquer momento. Avisaremos por e-mail ou notificação na plataforma. O uso contínuo após alterações indica concordância com a nova versão.
                         </p>
                     </section>
 
                     <section className={styles.secao}>
                         <h2 className={styles.subtitulo}>9. Contato</h2>
                         <p className={styles.paragrafo}>
-                          Email:<a href="malito:rivalix.oficial@gmail.com">rivalix.oficial@gmail.com</a>
+                            Email:<a href="malito:rivalix.oficial@gmail.com">rivalix.oficial@gmail.com</a>
                         </p>
                     </section>
                 </div>
             </main>
-        <Footer />
+            <Footer />
         </>
     )
 }
