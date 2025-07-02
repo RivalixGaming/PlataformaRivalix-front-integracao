@@ -31,7 +31,7 @@ export default function LGPD() {
                                 <li>
                                     <strong>Dados de Cadastro:</strong> Nome, e-mail, senha, nome de usuário, foto, bio e redes sociais.
                                 </li>
-                                <li>
+                                <li
                                     <strong>Dados de Utilização:</strong> Participações em torneios, ranking, interações no feed, uploads na galeria, recompensas e histórico de compras.
                                 </li>
                                 <li>
