@@ -242,7 +242,7 @@ export default function LoginPage() {
                   checked={acceptedTerms}
                   onChange={(e) => setAcceptedTerms(e.target.checked)}
                 />
-                <span> Aceito os <a href="#">termos de uso e privacidade</a></span>
+                <span> Aceito os <Link to="/lgpd">termos de uso e privacidade</Link></span>
               </label>
             )}
 
