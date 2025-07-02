@@ -56,7 +56,7 @@ export default function PerfilPage({ user = mockUser, isOwner = true }) {
               bannerUrl={usuario.banner || ''} // Usa || '' como fallback para valores nulos
               isOwner={isOwner}
               fotoUrl={usuario.foto || ''}
-              nome={usuario.nome}
+              nome={usuario.nomeUsuario}
             >
               <PerfilCard nome={usuario.nomeUsuario} isOwner={isOwner} />
             </BannerPerfil>
